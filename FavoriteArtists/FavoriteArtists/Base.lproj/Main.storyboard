@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="meB-Hf-hoD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add New Artist-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ArtistDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="YO0-yf-04b">
+                                <rect key="frame" x="0.0" y="140" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metallica" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29Q-J4-Uh8">
+                                <rect key="frame" x="20" y="212" width="374" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formed in 1981" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LB4-e6-GMe">
+                                <rect key="frame" x="20" y="253.5" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZyL-IV-hfs">
+                                <rect key="frame" x="20" y="288" width="374" height="554"/>
+                                <mutableString key="text">The band was formed in 1981 in Los Angeles by vocalist/guitarist James Hetfield and drummer Lars Ulrich, and has been based in San Francisco for most of its career.[1][2] The band's fast tempos, instrumentals and aggressive musicianship made them one of the founding "big four" bands of thrash metal, alongside Megadeth, Anthrax and Slayer. Metallica's current lineup comprises founding members and primary songwriters Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo. Guitarist Dave Mustaine (who went on to form Megadeth after being fired from the band) and bassists Ron McGovney, Cliff Burton (who died in a bus accident in Sweden in 1986) and Jason Newsted are former members of the band.
+
+Metallica earned a growing fan base in the underground music community and won critical acclaim with its first five albums.[3] The band's third album, Master of Puppets (1986), was described as one of the heaviest and most influential thrash metal albums. Its eponymous fifth album, Metallica (1991), the band's first to root predominantly in heavy metal, appealed to a more mainstream audience, achieving substantial commercial success and selling over 16 million copies in the United States to date, making it the best-selling album of the SoundScan era. After experimenting with different genres and directions in subsequent releases, the band returned to its thrash metal roots with the release of its ninth album, Death Magnetic (2008), which drew similar praise to that of the band's earlier albums.
+
+In 2000, Metallica led the case against the peer-to-peer file sharing service Napster, in which the band and several other artists filed lawsuits against the service for sharing their copyright-protected material without consent; after reaching a settlement, Napster became a pay-to-use service in 2003. Metallica was the subject of the acclaimed 2004 documentary film Metallica: Some Kind of Monster, which documented the troubled production of the band's eighth album, St. Anger (2003), and the internal struggles within the band at the time. In 2009, Metallica was inducted into the Rock and Roll Hall of Fame. The band wrote the screenplay for and starred in the 2013 IMAX concert film Metallica: Through the Never, in which the band performed live against a fictional thriller storyline.
+
+Metallica has released ten studio albums, four live albums, a cover album, five extended plays, 37 singles and 39 music videos. The band has won nine Grammy Awards from 23 nominations, and its last six studio albums (beginning with Metallica) have consecutively debuted at number one on the Billboard 200. Metallica ranks as one of the most commercially successful bands of all time, having sold over 125 million albums worldwide as of 2018.[4] Metallica has been listed as one of the greatest artists of all time by magazines such as Rolling Stone, which ranked them at no. 61 on its 100 Greatest Artists of All Time list.[5] As of 2017, Metallica is the third best-selling music artist since Nielsen SoundScan began tracking sales in 1991,[6] selling a total of 58 million albums in the United States.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YO0-yf-04b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9Es-lC-hx1"/>
+                            <constraint firstItem="YO0-yf-04b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bhg-Uu-uV2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="29Q-J4-Uh8" secondAttribute="trailing" constant="20" id="Fwl-os-BtP"/>
+                            <constraint firstItem="ZyL-IV-hfs" firstAttribute="top" secondItem="LB4-e6-GMe" secondAttribute="bottom" constant="8" id="Kbh-SI-zUD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZyL-IV-hfs" secondAttribute="trailing" constant="20" id="NTc-TJ-kTj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZyL-IV-hfs" secondAttribute="bottom" constant="20" id="Nof-1o-M0s"/>
+                            <constraint firstItem="YO0-yf-04b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Q29-N7-8Ne"/>
+                            <constraint firstItem="LB4-e6-GMe" firstAttribute="top" secondItem="29Q-J4-Uh8" secondAttribute="bottom" constant="8" id="QEe-9t-kuE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LB4-e6-GMe" secondAttribute="trailing" constant="20" id="eFG-sX-Dti"/>
+                            <constraint firstItem="29Q-J4-Uh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fda-dm-oUz"/>
+                            <constraint firstItem="LB4-e6-GMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jMb-kl-SXV"/>
+                            <constraint firstItem="ZyL-IV-hfs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mXP-65-DGu"/>
+                            <constraint firstItem="29Q-J4-Uh8" firstAttribute="top" secondItem="YO0-yf-04b" secondAttribute="bottom" constant="16" id="n2R-M5-ASM"/>
+                            <constraint firstItem="29Q-J4-Uh8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="rf7-bI-D2b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add New Artist" id="kFR-g1-lbx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ndh-Kd-FoZ">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="BYZ-38-t0r" id="Go2-tX-1cI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="29Q-J4-Uh8" id="9YI-L3-cuJ"/>
+                        <outlet property="biographyLabel" destination="ZyL-IV-hfs" id="JGZ-bV-zHa"/>
+                        <outlet property="saveButton" destination="ndh-Kd-FoZ" id="857-U6-pxf"/>
+                        <outlet property="searchBar" destination="YO0-yf-04b" id="Hua-pU-Qsb"/>
+                        <outlet property="yearFormedLabel" destination="LB4-e6-GMe" id="Kq3-42-vfy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3201" y="149"/>
+        </scene>
+        <!--Favorite Artists-->
+        <scene sceneID="Ceq-fF-72F">
+            <objects>
+                <tableViewController id="FGz-Sg-qjj" customClass="FavoriteArtistsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Onb-Z3-bnn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteArtistCell" textLabel="7hm-kD-Pw6" detailTextLabel="wdR-aZ-LU6" style="IBUITableViewCellStyleSubtitle" id="gyE-Tq-vqW">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gyE-Tq-vqW" id="8AF-nk-IxQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Metallica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7hm-kD-Pw6">
+                                            <rect key="frame" x="20" y="10" width="68.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Formed in 1981" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wdR-aZ-LU6">
+                                            <rect key="frame" x="20" y="31.5" width="87" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowArtistDetailSegue" id="W78-QH-OqL"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FGz-Sg-qjj" id="ajA-xr-muC"/>
+                            <outlet property="delegate" destination="FGz-Sg-qjj" id="war-Ij-fjB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favorite Artists" id="dzM-pN-Bef">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vey-Kh-ULg">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="ShowAddArtistSegue" id="JxV-ZL-Qde"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mnn-Dk-Nln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2480" y="149"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MuI-gR-rlK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="meB-Hf-hoD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="12b-Bv-xNh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FGz-Sg-qjj" kind="relationship" relationship="rootViewController" id="Fd8-5r-6KJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mzk-pq-nAh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1785.5072463768117" y="148.66071428571428"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JxV-ZL-Qde"/>
+    </inferredMetricsTieBreakers>
+</document>

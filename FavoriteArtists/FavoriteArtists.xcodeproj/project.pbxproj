@@ -16,6 +16,10 @@
 		ABF2FF4A24D5CB940073AE02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2FF4924D5CB940073AE02 /* main.m */; };
 		ABF2FF5224D5CE340073AE02 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABF2FF5124D5CE340073AE02 /* README.md */; };
 		ABF2FF5524D5CF7C0073AE02 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2FF5424D5CF7C0073AE02 /* Artist.m */; };
+		ABF2FF5824D5D8CE0073AE02 /* ArtistResult.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2FF5724D5D8CE0073AE02 /* ArtistResult.m */; };
+		ABF2FF5B24D5DB6B0073AE02 /* ArtistFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2FF5A24D5DB6B0073AE02 /* ArtistFetcher.m */; };
+		ABF2FF5E24D5E89F0073AE02 /* Artist+NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2FF5D24D5E89F0073AE02 /* Artist+NSJSONSerialization.m */; };
+		ABF2FF6124D5ED6F0073AE02 /* FavoriteArtists.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2FF6024D5ED6F0073AE02 /* FavoriteArtists.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,14 @@
 		ABF2FF5124D5CE340073AE02 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ABF2FF5324D5CF7C0073AE02 /* Artist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		ABF2FF5424D5CF7C0073AE02 /* Artist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		ABF2FF5624D5D8CE0073AE02 /* ArtistResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistResult.h; sourceTree = "<group>"; };
+		ABF2FF5724D5D8CE0073AE02 /* ArtistResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistResult.m; sourceTree = "<group>"; };
+		ABF2FF5924D5DB6B0073AE02 /* ArtistFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistFetcher.h; sourceTree = "<group>"; };
+		ABF2FF5A24D5DB6B0073AE02 /* ArtistFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistFetcher.m; sourceTree = "<group>"; };
+		ABF2FF5C24D5E89F0073AE02 /* Artist+NSJSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Artist+NSJSONSerialization.h"; sourceTree = "<group>"; };
+		ABF2FF5D24D5E89F0073AE02 /* Artist+NSJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Artist+NSJSONSerialization.m"; sourceTree = "<group>"; };
+		ABF2FF5F24D5ED6F0073AE02 /* FavoriteArtists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteArtists.h; sourceTree = "<group>"; };
+		ABF2FF6024D5ED6F0073AE02 /* FavoriteArtists.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteArtists.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,14 @@
 				ABF2FF4024D5CB930073AE02 /* Main.storyboard */,
 				ABF2FF5324D5CF7C0073AE02 /* Artist.h */,
 				ABF2FF5424D5CF7C0073AE02 /* Artist.m */,
+				ABF2FF5C24D5E89F0073AE02 /* Artist+NSJSONSerialization.h */,
+				ABF2FF5D24D5E89F0073AE02 /* Artist+NSJSONSerialization.m */,
+				ABF2FF5624D5D8CE0073AE02 /* ArtistResult.h */,
+				ABF2FF5724D5D8CE0073AE02 /* ArtistResult.m */,
+				ABF2FF5924D5DB6B0073AE02 /* ArtistFetcher.h */,
+				ABF2FF5A24D5DB6B0073AE02 /* ArtistFetcher.m */,
+				ABF2FF5F24D5ED6F0073AE02 /* FavoriteArtists.h */,
+				ABF2FF6024D5ED6F0073AE02 /* FavoriteArtists.m */,
 			);
 			path = FavoriteArtists;
 			sourceTree = "<group>";
@@ -159,9 +179,13 @@
 			files = (
 				ABF2FF3F24D5CB930073AE02 /* ViewController.m in Sources */,
 				ABF2FF3924D5CB930073AE02 /* AppDelegate.m in Sources */,
+				ABF2FF5E24D5E89F0073AE02 /* Artist+NSJSONSerialization.m in Sources */,
 				ABF2FF4A24D5CB940073AE02 /* main.m in Sources */,
+				ABF2FF5B24D5DB6B0073AE02 /* ArtistFetcher.m in Sources */,
+				ABF2FF5824D5D8CE0073AE02 /* ArtistResult.m in Sources */,
 				ABF2FF3C24D5CB930073AE02 /* SceneDelegate.m in Sources */,
 				ABF2FF5524D5CF7C0073AE02 /* Artist.m in Sources */,
+				ABF2FF6124D5ED6F0073AE02 /* FavoriteArtists.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

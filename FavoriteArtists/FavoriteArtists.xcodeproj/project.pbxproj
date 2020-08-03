@@ -20,6 +20,7 @@
 		ABF2FF5B24D5DB6B0073AE02 /* ArtistFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2FF5A24D5DB6B0073AE02 /* ArtistFetcher.m */; };
 		ABF2FF5E24D5E89F0073AE02 /* Artist+NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2FF5D24D5E89F0073AE02 /* Artist+NSJSONSerialization.m */; };
 		ABF2FF6124D5ED6F0073AE02 /* FavoriteArtists.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2FF6024D5ED6F0073AE02 /* FavoriteArtists.m */; };
+		ABF2FF6424D8D2CA0073AE02 /* FavoriteArtistsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2FF6324D8D2CA0073AE02 /* FavoriteArtistsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		ABF2FF5D24D5E89F0073AE02 /* Artist+NSJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Artist+NSJSONSerialization.m"; sourceTree = "<group>"; };
 		ABF2FF5F24D5ED6F0073AE02 /* FavoriteArtists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteArtists.h; sourceTree = "<group>"; };
 		ABF2FF6024D5ED6F0073AE02 /* FavoriteArtists.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteArtists.m; sourceTree = "<group>"; };
+		ABF2FF6224D8D2CA0073AE02 /* FavoriteArtistsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteArtistsTableViewController.h; sourceTree = "<group>"; };
+		ABF2FF6324D8D2CA0073AE02 /* FavoriteArtistsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteArtistsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				ABF2FF5A24D5DB6B0073AE02 /* ArtistFetcher.m */,
 				ABF2FF5F24D5ED6F0073AE02 /* FavoriteArtists.h */,
 				ABF2FF6024D5ED6F0073AE02 /* FavoriteArtists.m */,
+				ABF2FF6224D8D2CA0073AE02 /* FavoriteArtistsTableViewController.h */,
+				ABF2FF6324D8D2CA0073AE02 /* FavoriteArtistsTableViewController.m */,
 			);
 			path = FavoriteArtists;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			files = (
 				ABF2FF3F24D5CB930073AE02 /* ViewController.m in Sources */,
 				ABF2FF3924D5CB930073AE02 /* AppDelegate.m in Sources */,
+				ABF2FF6424D8D2CA0073AE02 /* FavoriteArtistsTableViewController.m in Sources */,
 				ABF2FF5E24D5E89F0073AE02 /* Artist+NSJSONSerialization.m in Sources */,
 				ABF2FF4A24D5CB940073AE02 /* main.m in Sources */,
 				ABF2FF5B24D5DB6B0073AE02 /* ArtistFetcher.m in Sources */,

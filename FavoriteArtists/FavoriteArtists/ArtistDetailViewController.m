@@ -29,9 +29,28 @@
 
 @implementation ArtistDetailViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
+    
     [super viewDidLoad];
     
+    self.artistFetcher = [[ArtistFetcher alloc] init];
+    
+    self.searchBar.delegate = self;
+    
+    if (self.favoriteArtistDetail) {
+        [self.searchBar removeFromSuperview];
+        self.navigationItem.rightBarButtonItem = nil;
+    }
+    
+    [self updateViews];
+}
+
+- (IBAction)setSaveButton:(UIBarButtonItem *)sender
+{
+    if (self.artist == nil) return;
+    [self.favoriteArtists addArtists:self.artist];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

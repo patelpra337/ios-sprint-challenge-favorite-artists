@@ -89,6 +89,8 @@
         
         if (artists.count > 0) {
             self.artist = artists[0];
+        } else {
+            self.title = @"Artist Not Found";
         }
         
         [self updateViews];

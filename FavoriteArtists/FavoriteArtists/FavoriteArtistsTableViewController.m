@@ -74,8 +74,19 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    
-    
+    if ([[segue identifier] isEqualToString:@"ShowArtistDetailSegue"]) {
+        ArtistDetailViewController *artistDetailVC = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Artist *artist = [self.favoriteArtists.artists objectAtIndex:indexPath.row];
+        
+        artistDetailVC.artist = artist;
+        artistDetailVC.favoriteArtistDetail = YES;
+    } else if ([[segue identifier] isEqualToString:@"ShowAddArtistSegue"]) {
+        ArtistDetailViewController *artistDetailVC = [segue destinationViewController];
+        
+        artistDetailVC.favoriteArtistDetail = NO;
+        artistDetailVC.favoriteArtistDetail = self.favoriteArtists;
+    }
 }
 
 @end

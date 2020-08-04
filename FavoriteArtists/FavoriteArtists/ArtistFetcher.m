@@ -10,7 +10,7 @@
 #import "Artist.h"
 #import "ArtistResult.h"
 
-static NSString *const ArtistFetcherBaseURLString = @"https://www.theaudiodb.com/api/v1/json/1/search.php?s";
+static NSString *const ArtistFetcherBaseURLString = @"https://www.theaudiodb.com/api/v1/json/1/search.php?";
 
 @implementation ArtistFetcher
 

@@ -43,7 +43,7 @@
         self.navigationItem.rightBarButtonItem = nil;
     }
     
-    [self updateViews];
+    // [self updateViews];
 }
 
 - (IBAction)setSaveButton:(UIBarButtonItem *)sender

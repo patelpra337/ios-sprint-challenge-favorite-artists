@@ -25,21 +25,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formed in 1981" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LB4-e6-GMe">
-                                <rect key="frame" x="20" y="253.5" width="374" height="26.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formed In 1981" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LB4-e6-GMe">
+                                <rect key="frame" x="20" y="253.5" width="374" height="27"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZyL-IV-hfs">
-                                <rect key="frame" x="20" y="288" width="374" height="554"/>
-                                <string key="text">The band was formed in 1981 in Los Angeles by vocalist/guitarist James Hetfield and drummer Lars Ulrich, and has been based in San Francisco for most of its career.[1][2] The band's fast tempos, instrumentals and aggressive musicianship made them one of the founding "big four" bands of thrash metal, alongside Megadeth, Anthrax and Slayer. Metallica's current lineup comprises founding members and primary songwriters Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo. Guitarist Dave Mustaine (who went on to form Megadeth after being fired from the band) and bassists Ron McGovney, Cliff Burton (who died in a bus accident in Sweden in 1986) and Jason Newsted are former members of the band.
-
-Metallica earned a growing fan base in the underground music community and won critical acclaim with its first five albums.[3] The band's third album, Master of Puppets (1986), was described as one of the heaviest and most influential thrash metal albums. Its eponymous fifth album, Metallica (1991), the band's first to root predominantly in heavy metal, appealed to a more mainstream audience, achieving substantial commercial success and selling over 16 million copies in the United States to date, making it the best-selling album of the SoundScan era. After experimenting with different genres and directions in subsequent releases, the band returned to its thrash metal roots with the release of its ninth album, Death Magnetic (2008), which drew similar praise to that of the band's earlier albums.
-
-In 2000, Metallica led the case against the peer-to-peer file sharing service Napster, in which the band and several other artists filed lawsuits against the service for sharing their copyright-protected material without consent; after reaching a settlement, Napster became a pay-to-use service in 2003. Metallica was the subject of the acclaimed 2004 documentary film Metallica: Some Kind of Monster, which documented the troubled production of the band's eighth album, St. Anger (2003), and the internal struggles within the band at the time. In 2009, Metallica was inducted into the Rock and Roll Hall of Fame. The band wrote the screenplay for and starred in the 2013 IMAX concert film Metallica: Through the Never, in which the band performed live against a fictional thriller storyline.
-
-Metallica has released ten studio albums, four live albums, a cover album, five extended plays, 37 singles and 39 music videos. The band has won nine Grammy Awards from 23 nominations, and its last six studio albums (beginning with Metallica) have consecutively debuted at number one on the Billboard 200. Metallica ranks as one of the most commercially successful bands of all time, having sold over 125 million albums worldwide as of 2018.[4] Metallica has been listed as one of the greatest artists of all time by magazines such as Rolling Stone, which ranked them at no. 61 on its 100 Greatest Artists of All Time list.[5] As of 2017, Metallica is the third best-selling music artist since Nielsen SoundScan began tracking sales in 1991,[6] selling a total of 58 million albums in the United States.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="BIO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZyL-IV-hfs">
+                                <rect key="frame" x="20" y="288.5" width="374" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,21 +60,21 @@ Metallica has released ten studio albums, four live albums, a cover album, five 
                     <navigationItem key="navigationItem" title="Add New Artist" id="kFR-g1-lbx">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="ndh-Kd-FoZ">
                             <connections>
-                                <action selector="setSaveButton:" destination="BYZ-38-t0r" id="6bG-Bm-Z57"/>
+                                <action selector="saveButtonTapped:" destination="BYZ-38-t0r" id="B3e-Pe-lRt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="artistNameLabel" destination="29Q-J4-Uh8" id="9YI-L3-cuJ"/>
-                        <outlet property="biographyLabel" destination="ZyL-IV-hfs" id="JGZ-bV-zHa"/>
-                        <outlet property="saveButton" destination="ndh-Kd-FoZ" id="857-U6-pxf"/>
-                        <outlet property="searchBar" destination="YO0-yf-04b" id="Hua-pU-Qsb"/>
-                        <outlet property="yearFormedLabel" destination="LB4-e6-GMe" id="Kq3-42-vfy"/>
+                        <outlet property="artistNameLabel" destination="29Q-J4-Uh8" id="FG6-AV-6PB"/>
+                        <outlet property="biographyLabel" destination="ZyL-IV-hfs" id="YUz-2o-NYg"/>
+                        <outlet property="saveButton" destination="ndh-Kd-FoZ" id="lzU-fT-DVR"/>
+                        <outlet property="searchBar" destination="YO0-yf-04b" id="dzi-g2-GYU"/>
+                        <outlet property="yearFormedLabel" destination="LB4-e6-GMe" id="UG8-pN-HM0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3201" y="149"/>
+            <point key="canvasLocation" x="3200.0000000000005" y="148.66071428571428"/>
         </scene>
         <!--Favorite Artists-->
         <scene sceneID="Ceq-fF-72F">
@@ -157,6 +150,6 @@ Metallica has released ten studio albums, four live albums, a cover album, five 
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="W78-QH-OqL"/>
+        <segue reference="JxV-ZL-Qde"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -23,7 +23,7 @@
     [super viewDidLoad];
     
     self.favoriteArtists = [[FavoriteArtists alloc] init];
-
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -57,14 +57,15 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+    forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         Artist *artist = [self.favoriteArtists.artists objectAtIndex:indexPath.row];
         [self.favoriteArtists deleteArtist:artist];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    
-    }   
+        
+    }
 }
 
 
@@ -85,7 +86,7 @@
         ArtistDetailViewController *artistDetailVC = [segue destinationViewController];
         
         artistDetailVC.favoriteArtistDetail = NO;
-        artistDetailVC.favoriteArtistDetail = self.favoriteArtists;
+        artistDetailVC.favoriteArtists = self.favoriteArtists;
     }
 }
 

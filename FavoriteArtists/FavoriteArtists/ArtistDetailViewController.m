@@ -13,6 +13,7 @@
 
 @interface ArtistDetailViewController ()
 
+
 @property ArtistFetcher *artistFetcher;
 
 @property (nonatomic) IBOutlet UIBarButtonItem *saveButton;
@@ -23,7 +24,7 @@
 
 @end
 
-@interface  ArtistDetailViewController (UISearchBarDelegate) <UISearchBarDelegate>
+@interface ArtistDetailViewController (UISearchBarDelegate) <UISearchBarDelegate>
 
 @end
 
@@ -31,7 +32,6 @@
 
 - (void)viewDidLoad
 {
-    
     [super viewDidLoad];
     
     self.artistFetcher = [[ArtistFetcher alloc] init];
@@ -43,14 +43,56 @@
         self.navigationItem.rightBarButtonItem = nil;
     }
     
-    // [self updateViews];
+    [self updateViews];
 }
 
-- (IBAction)setSaveButton:(UIBarButtonItem *)sender
+- (IBAction)saveButtonTapped:(UIBarButtonItem *)sender
 {
     if (self.artist == nil) return;
     [self.favoriteArtists addArtists:self.artist];
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)updateViews
+{
+    if (self.artist != nil) {
+        
+        self.artistNameLabel.text = self.artist.name;
+        self.biographyLabel.text = self.artist.biography;
+        
+        if (self.artist.yearFormed != 0) {
+            NSString *yearFormedString = [NSString stringWithFormat:@"Formed in %d", self.artist.yearFormed];
+            self.yearFormedLabel.text = yearFormedString;
+        } else {
+            self.yearFormedLabel.text = @"Year Formed: Unkown";
+        }
+    } else {
+        self.artistNameLabel.text = nil;
+        self.biographyLabel.text = nil;
+        self.yearFormedLabel.text = nil;
+    }
+}
+
+@end
+
+@implementation ArtistDetailViewController(UISearchBarDelegate)
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    NSString *searchTerm = searchBar.text;
+    if ((searchTerm == nil) | [searchTerm isEqualToString:@""]) return;
+    
+    NSLog(@"Searching for %@", searchTerm);
+    
+    [self.artistFetcher fetchArtistsWithName:searchTerm completionHandler:^(NSArray * _Nullable artists, NSError * _Nullable error) {
+        NSLog(@"Found %ld results!", artists.count);
+        
+        if (artists.count > 0) {
+            self.artist = artists[0];
+        }
+        
+        [self updateViews];
+    }];
 }
 
 @end
